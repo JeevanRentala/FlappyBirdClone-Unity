@@ -28,8 +28,8 @@ public class PipeSpawner : MonoBehaviour
 
     void SpawnPipe()
     {
-        float randomY = Random.Range(-heightOffset, heightOffset);
-        Vector3 spawnPos = new Vector3(transform.position.x, randomY, 0);
+        //float randomY = Random.Range(-heightOffset, heightOffset);
+        Vector3 spawnPos = new Vector3(transform.position.x, transform.position.y, 0);
         Instantiate(pipePrefab, spawnPos, Quaternion.identity);
     }
 }
